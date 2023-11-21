@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "compileCommands": "${workspaceFolder}/project/pid_controller/compile_commands.json",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            // "defines": [],
+            // "compilerPath": "/usr/bin/clang",
+            // "cStandard": "c17",
+            // "intelliSenseMode": "linux-clang-x64"
+        }
+    ],
+    "version": 4
+}

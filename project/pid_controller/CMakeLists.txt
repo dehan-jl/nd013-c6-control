@@ -6,6 +6,7 @@ cmake_minimum_required (VERSION 3.10)
 # turn on -03 for best performance
 add_definitions(-std=c++14 -O3)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 set(CXX_FLAGS "-pthread -fPIC -DNDEBUG -Wall -Wextra")
 set(CMAKE_CXX_FLAGS "${CXX_FLAGS} -Wl,-Bstatic -lcarla_client -lrpc -lboost_filesystem -Wl,-Bdynamic")
 

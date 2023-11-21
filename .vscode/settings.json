@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "/home/ubuntu/nd013-c6-control/project/pid_controller"
+    "cmake.sourceDirectory": "/home/ubuntu/nd013-c6-control/project/pid_controller",
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
 }
