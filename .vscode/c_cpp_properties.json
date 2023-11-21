@@ -5,7 +5,7 @@
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "compileCommands": "${workspaceFolder}/project/pid_controller/compile_commands.json",
+            "compileCommands": "${workspaceFolder}/project/pid_controller/build/compile_commands.json",
             "configurationProvider": "ms-vscode.cmake-tools",
             // "defines": [],
             // "compilerPath": "/usr/bin/clang",

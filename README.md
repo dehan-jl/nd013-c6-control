@@ -198,7 +198,8 @@ When you finish updating the project files, you can execute the project using th
 ```bash
 # Build the project
 # Run the following commands from the pid_controller/ directory
-cmake .
+mkdir build && cd build
+cmake ..
 # The command below compiles your c++ code. Run it after each time you edit the CPP or Header files
 make
 ```
