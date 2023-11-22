@@ -7,12 +7,12 @@ cmake_minimum_required (VERSION 3.10)
 add_definitions(-std=c++14 -O3)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
-set(CXX_FLAGS "-pthread -fPIC -DNDEBUG")
+set(CXX_FLAGS "-pthread -fPIC -DNDEBUG -w")
 set(CMAKE_CXX_FLAGS "${CXX_FLAGS} -Wl,-Bstatic -lcarla_client -lrpc -lboost_filesystem -Wl,-Bdynamic")
 
 set(sources main.cpp behavior_planner_FSM.cpp motion_planner.cpp cubic_spiral.cpp spiral_base.cpp integral.cpp spiral_equations.cpp cost_functions.cpp utils.cpp velocity_profile_generator.cpp pid_controller.cpp)
 
-set_source_files_properties(${sources} PROPERTIES COMPILE_FLAGS "-Wall -Wextra")
+# set_source_files_properties(${sources} PROPERTIES COMPILE_FLAGS "-Wall -Wextra")
 
 # Use includes and libs from CARLA_SOURCE_DIR.
 set(CARLA_SOURCE_DIR /opt/carla-source)

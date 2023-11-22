@@ -57,7 +57,7 @@ double PID::TotalError() {
    * The code should return a value in the interval [output_lim_mini,
    * output_lim_maxi]
    */
-  double control = -tau_p * prev_cte - tau_d * diff_cte - tau_i * int_cte;
+  double control = tau_p * prev_cte + tau_d * diff_cte + tau_i * int_cte;
   if (control > output_lim_max) {
     control = output_lim_max;
   } else if (control < output_lim_min) {

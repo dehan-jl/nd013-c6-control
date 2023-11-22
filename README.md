@@ -217,7 +217,12 @@ Another possible error you may get is `bind failed. Error: Address already in us
 ```bash
 ps -aux | grep carla
 # Use the IDs displayed in the output of the last command. 
-kill id     
+kill id
+```
+
+The better (one liner way of doing this is)
+```bash
+pgrep -f carla | xargs -r kill -9
 ```
 
 <br/><br/>
